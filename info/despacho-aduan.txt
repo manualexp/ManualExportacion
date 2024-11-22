@@ -1,0 +1,22 @@
+Despacho aduanero
+
+Actos y formalidades relativos a la entrada de mercancías al territorio nacional y a su salida de este, que, de acuerdo con los diferentes tráficos y regímenes aduaneros establecidos en el presente ordenamiento, deben realizar ante la aduana, las autoridades aduaneras.
+Se requiere:
+• Datos fiscales de importador o exportador:
+    o Indique el nombre completo del exportador.
+    o Denominación o razón social.
+    o Domicilio (Incluyendo ciudad y país).
+    o Número de teléfono.
+    o Fax.
+    o Numero de registro fiscal.
+• Origen y destino de los artículos:
+    o Certificado de origen.
+    o Pedimento.
+• Clasificación arancelaria:
+Determina las regulaciones y restricciones arancelarias y no arancelarias de los productos que quieren ingresar a algún país.
+• Peso (bruto y neto):
+Es el peso de los productos.
+• Certificado de origen:
+Documento legal donde se indica el país de producción del producto.
+• Derechos e impuestos a pagar:
+Lo que pagaras por exportar a otro país o por importar mercancías de un país.

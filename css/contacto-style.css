@@ -1,0 +1,185 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra de menú */
+.navbar {
+    background-color:#089790;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Estilo para el título principal */
+.main-title {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Estilo para el párrafo principal */
+.main-paragraph {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 60px;
+}
+
+/* Estilos para la sección de rectángulos */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    height: 60vh;
+}
+
+.info-box {
+    background-color: #6EC6CA; /* Fondo claro */
+    border-radius: 20px; /* Esquinas redondeadas */
+    width: 45%; /* Ancho para ocupar mitad de la pantalla */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-image {
+    width: 80px; /* Ancho ajustado */
+    height: 80px; /* Altura ajustada */
+    margin-top: -40px; /* Ajuste de posición sobre el borde superior */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+   
+}
+
+
+
+.box-text {
+    color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.box-text-bold {
+    color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold; 
+}
+
+/* Estilos para el modal */
+.info-modal {
+    display: none; /* Ocultado por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #055B5C;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-content .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-content .social-links li a:hover {
+    text-decoration: underline;
+}

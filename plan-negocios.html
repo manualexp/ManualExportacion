@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Elabora tu plan de negocios</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">Identificar la ficción arancelaria de tus mercancías</div>
+        <div class="texto-subtema" id="texto1"><p>• Antes ya debes contar con tu fracción arancelaria.</p></div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 2">Obtener el certificado de origen de las mercancías</div>
+        <div class="texto-subtema" id="texto2">• Elegir el tipo de certificado: de la autoridad o auto certificación.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 3">Conviértete en exportador autorizado</div>
+        <div class="texto-subtema" id="texto3">• Cumplir los requisitos.
+        <br><br>• Cumplir con las regulaciones no arancelarias
+        <br><br>• Permisos de exportación e importación
+        <br><br>• Revisa si se requiere de alguna autorización especial.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 4">Cupos</div>
+        <div class="texto-subtema" id="texto4">• Exporta o importa montos determinados de un producto con arancel menor.
+        <br><br>• Licitación pública o por asignación directa.</div>
+
+        <div class="subtema" data-texto="Texto para el subtema 5">Etiquetado</div>
+        <div class="texto-subtema" id="texto5">• Genera etiquetas según el país de destino.</div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 6">Envase y embalaje</div>
+        <div class="texto-subtema" id="texto6">• Revisa si las cajas, frascos o botellas de tus productos tienen regulaciones en el país de entrada.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 7">Mercado de origen</div>
+        <div class="texto-subtema" id="texto7">• Certificado de origen.
+        <br><br>• Auto certificación de origen T-MEC para Estados Unidos o Canadá.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 8">Regulaciones sanitarias</div>
+        <div class="texto-subtema" id="texto8">• Consulta las normas del país de llegada.
+        <br><br>• Utiliza certificaciones de la COFEPRIS.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 9">Certificado CITES (SEMARNAT)</div>
+        <div class="texto-subtema" id="texto9">• Para exportar animales.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 10">Normas técnicas</div>
+        <div class="texto-subtema" id="texto10">• Verifica que tus mercancías cumplan con las normas aplicables del país.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 11">Normas de calidad</div>
+        <div class="texto-subtema" id="texto11">• Procesos empresariales óptimos.</div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

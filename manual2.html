@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual2.html">Manual</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="main-title">Manual de exportación</h1>
+        <p class="main-paragraph">Selecciona la opción que quieres consultar</p>
+    
+        <div class="info-box" data-info="Definir el tipo de exportación" data-url="tipo-export.html">Definir el tipo de exportación</div>
+        <div class="info-box" data-info="Características de la empresa" data-url="caracteristicas-empresa.html">Características de la empresa</div>
+        <div class="info-box" data-info="Desarrollar un plan estratégico para exportar" data-url="plan-estrategico.html">Desarrollar un plan estratégico para exportar</div>
+        <div class="info-box" data-info="Elabora tu plan de negocios" data-url="plan-negocios.html">Elabora tu plan de negocios</div>
+        <div class="info-box" data-info="Abrir una cuenta" data-url="abrir-cuenta.html">Abrir una cuenta</div>
+        <div class="info-box" data-info="Transporte" data-url="transporte.html">Transporte</div>
+        <div class="info-box" data-info="Despacho aduanero" data-url="despacho-aduanero.html">Despacho aduanero</div>
+        <div class="info-box" data-info="Economía" data-url="economia.html">Economía</div>
+        <div class="info-box" data-info="Métodos de pago" data-url="metodos-pago.html">Métodos de pago</div>
+        <div class="info-box" data-info="Propiedad intelectual" data-url="propiedad-intelectual.html">Propiedad intelectual</div>
+        <div class="info-box" data-info="Práctica de negocios" data-url="practica-negocios.html">Práctica de negocios</div>
+        <div class="info-box" data-info="Modalidades de inversión" data-url="modalidades-inversion.html">Modalidades de inversión</div>
+        <div class="info-box" data-info="E-commerce" data-url="ecommerce.html">E-commerce</div>
+    </div>
+    
+
+    <div class="info-modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="infoText"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.info-box').forEach(box => {
+            box.addEventListener('click', function() {
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url; // Redirige a la URL especificada
+                }
+            });
+        });
+    </script>
+    
+   
+</body>
+</html>

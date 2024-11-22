@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Características de la empresa</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">Elementos de la empresa</div>
+        <div class="texto-subtema" id="texto1"><p>La empresa para exportar debe contar con:<br>• Recursos humanos.<br>• Recursos financieros.<br>• Recursos materiales.<br>• Capacidad técnica y productiva para hacer frente a la competencia.</p></div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 2">Identificar los documentos que se van a necesitar</div>
+        <div class="texto-subtema" id="texto2">• RFC: clave alfanumérica que el gobierno utiliza para identificar a las personas físicas y morales.
+            <br><br>• Firma electrónica: conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico.
+            <br><br>• Inscripción en el padrón de exportadores: trámite sencillo que deberás cumplir antes de comenzar a vender tus productos a clientes en el extranjero.
+            <br><br>• Obtener la opinión positiva del cumplimiento de tu empresa: para obtener la Opinión del cumplimiento de obligaciones fiscales de tu empresa; el SAT te ofrece la siguiente opción: Obtener la Opinión del cumplimiento en línea a través del Portal del SAT.
+            <br><br>• Registrar la marca ante el IMPI (Instituto mexicano de la propiedad industrial): da el derecho al uso exclusivo en el territorio nacional por 10 años, ya que distingue tus productos o servicios de otros existentes en el mercado.
+            <br><br>• Registrarse en el directorio de empresa mexicanas para la promoción de sus exportaciones: se integra mediante un formulario, recolectar información estratégica sobre las empresas exportadoras mexicanas.
+            <br><br>• Distintivo hecho en México: distintivo oficial que identifica los productos hechos en México y que les permite ser reconocidos por los consumidores de nuestro país y del mundo.
+            <br><br>• Registro en el sistema de información Empresarial mexicano (SIEM), identificar oportunidades: instrumento del Estado Mexicano cuyo propósito es captar, integrar, procesar y suministrar información sobre las características y ubicación de los establecimientos de comercio.
+            <br><br>• Certificado de origen: indica el país de fabricación de una mercancía y puede darle tratos arancelarios preferenciales en otros países.
+            <br><br>• Documentos de trasporte: son evidencia tangible de que se ha establecido un contrato entre el remitente y el transportista.
+            <br><br>• Documentos que avalen el cumplimiento de regulaciones: se refieren a los impuestos (aranceles) que se aplican por la entrada o salida de las mercancías.
+            <br><br>• Documentos que avalen el cumplimiento de restricciones no arancelarias: se refieren a las medidas establecidas por los gobiernos para controlar el flujo de mercancías entre los países y se dividen en dos clases.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 3">Servicios que utilizar</div>
+        <div class="texto-subtema" id="texto3">• Servicio nacional de información de comercio exterior (SNICE), brinda la información requerida para poder participar en el comercio exterior.
+            <br><br>• Ventanilla única de comercio exterior mexicana (VUCEM).</div>
+    
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

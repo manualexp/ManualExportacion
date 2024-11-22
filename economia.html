@@ -1,0 +1,125 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Economía</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">Introducción a la economía y el comercio</div>
+        <div class="texto-subtema" id="texto1"><p>• Trata de describir el comportamiento económico individual y colectivo, así como las interacciones económicas interpersonales e intergrupales.
+        <br><br>• Se denomina comercio a la actividad económica que consiste en la transferencia e intercambio de bienes y servicios entre personas o entre otras entidades en la economía.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 2">Impacto de las importaciones en la economía nacional</div>
+        <div class="texto-subtema" id="texto2"><p>• Facilitan el acceso a productos no disponibles en el mercado nacional.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 3">Costos asociados con la importación</div>
+        <div class="texto-subtema" id="texto3"><p>• Incluyen los aranceles, los gastos de manejo de aduana, los seguros y los costos de transporte.</p></div>
+
+        <div class="subtema" data-texto="Texto para el subtema 4">Costos de bienes</div>
+        <div class="texto-subtema" id="texto4"><p>• Gastos directamente relacionados con la producción del producto de una empresa.</p></div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 5">Aranceles e impuestos</div>
+        <div class="texto-subtema" id="texto5"><p>• Se pagará por importar o exportar las mercancías.</p></div>    
+    
+        <div class="subtema" data-texto="Texto para el subtema 6">Transporte y logística</div>
+        <div class="texto-subtema" id="texto6"><p>• Planificación, organización y control del flujo de bienes, servicios e información desde el lugar de origen hasta el lugar de consumo o uso final.</p></div>    
+
+        <div class="subtema" data-texto="Texto para el subtema 7">Gastos aduaneros</div>
+        <div class="texto-subtema" id="texto7"><p>• Impuestos y aranceles que se deben pagar por la importación o exportación de bienes.</p></div>    
+        
+        <div class="subtema" data-texto="Texto para el subtema 8">Efectos económicos globales</div>
+        <div class="texto-subtema" id="texto8"><p>• Aumento del PIB
+        <br><br>• Creación de empleo
+        <br><br>• Transferencia de conocimientos y tecnología
+        <br><br>• Mejora de la competitividad
+        <br><br>• Estímulo al desarrollo sostenible.</p></div> 
+        
+        <div class="subtema" data-texto="Texto para el subtema 9">Balanzas comerciales</div>
+        <div class="texto-subtema" id="texto9"><p>• Registro de importaciones y exportaciones de un país en determinado período.</p></div>    
+        
+        <div class="subtema" data-texto="Texto para el subtema 10">Tipo de cambio</div>
+        <div class="texto-subtema" id="texto10"><p>• Tasa de proporción que existe entre el valor de una moneda y otra.</p></div>    
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

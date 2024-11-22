@@ -1,0 +1,118 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Práctica de negocios</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">Introducción</div>
+        <div class="texto-subtema" id="texto1"><p>Elaborar un plan de negocios efectivo, este ayudara a la empresa a entrar de manera efectiva a mercados internacionales.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 2">Elementos clave que conforman un plan de exportación</div>
+        <div class="texto-subtema" id="texto2"><p>• Clarificar las metas a corto y largo plazo permite dirigir esfuerzos de manera eficiente.
+        <br><br>• Antecedentes empresariales: Historial de internacionalización y políticas empresariales que definen las oportunidades y limitaciones.
+        <br><br>• Estudio del sector: Análisis del comportamiento y tendencias del sector específico para identificar vías de exportación y estrategias exitosas.
+        <br><br>• Análisis de mercado: Comprender las preferencias del público objetivo y las condiciones del nuevo mercado.
+        <br><br>• Determinar la logística para acceder al mercado, incluyendo la distribución e inserción de productos.
+        <br><br>• Plan de acción: Pasos concretos y realistas para alcanzar las metas de exportación.
+        <br><br>• Evaluar los recursos financieros, tecnológicos y humanos necesarios para la ejecución.
+        <br><br>• Asignación clara de roles dentro del equipo para llevar a cabo las actividades del plan.
+        <br><br>• Gestión de riesgos: Prepararse para imprevistos y definir acciones correctivas para minimizar posibles problemas.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 3">Pasos clave para crear un plan de exportación</div>
+        <div class="texto-subtema" id="texto3"><p>• Establecer objetivos claros a corto y largo plazo.
+        <br><br>• Analizar el mercado, competidores y adaptaciones necesarias.
+        <br><br>• Analizar la disponibilidad de recursos: Considerar recursos financieros y humanos disponibles.
+        <br><br>• Optimizar procesos, contratar personal adecuado y adquirir tecnología necesaria.
+        <br><br>• Delegar responsabilidades: Asignar tareas específicas a cada área de la empresa.
+        <br><br>• Gestionar riesgos: Identificar posibles riesgos y prever estrategias reactivas.
+        <br><br>• Considerar leyes aplicables: Cumplir con normativas locales e internacionales.
+        <br><br>• Establecer precios que equilibren los costos de exportación.
+        <br><br>• Resumir el plan para tener una visión clara y comprensible de la estrategia.</p></div>
+
+        
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Transporte
+
+Se conoce como transporte internacional de mercancías al conjunto de operaciones logísticas encargadas de enviar diferentes productos entre países. Se trata de una actividad cuya regulación dependerá de la legislación de las naciones implicadas. A su vez, estos envíos pueden llevarse a cabo por distintos medios.
+• Transporte marítimo.
+• Transporte terrestre.
+• Transporte ferroviario.
+• Transporte aéreo.
+
+Fases del transporte
+• Fase 1: Preparación de la mercancía.
+• Fase 2: Traslado nacional de la mercancía.
+• Fase 3: Llegada a la aduana.
+• Fase 4: Paso por la aduana de destino.
+• Fase 5: Traslado por el país de destino.
+• Fase 6: Entrega de mercancía.

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Desarrollar un plan estratégico para exportar</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">Definir el producto o servicio</div>
+        <div class="texto-subtema" id="texto1"><p>Definir el producto o servicio, si cumple con:
+            <br><br>• Oferta exportable: si cumple con el volumen solicitado por el cliente o el importador.
+            <br><br>• Identifica donde tiene mayor oportunidad comercial.
+            <br><br>• Calidad y requerimientos del mercado destino.</p></div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 2">Precio competitivo y utilidad razonable</div>
+        <div class="texto-subtema" id="texto2">• RFC: clave alfanumérica que el gobierno utiliza para identificar a las personas físicas y morales.
+            <br><br>• Revisa precios de exportación para ajustar los tuyos, ofrece garantías.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 3">Analiza el mercado destino</div>
+        <div class="texto-subtema" id="texto3">• Oportunidades y amenazas.</div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 4">Utilizar Data México</div>
+        <div class="texto-subtema" id="texto4">• Integra, visualiza y analiza datos públicos para mejores decisiones comerciales.</div>
+
+        <div class="subtema" data-texto="Texto para el subtema 5">Export Potencial Map (EPM)</div>
+        <div class="texto-subtema" id="texto5">• Oportunidades de diversificación de las exportaciones.
+            <br><br>• Productos, mercados y países exportadores con potencial para incrementar exportaciones.
+            Conocer las regulaciones y restricciones arancelarias y no arancelarias </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

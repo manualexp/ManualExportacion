@@ -1,0 +1,119 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <style>
+       
+
+        .seccion-subtema {
+          
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            flex-grow: 1;
+        }
+
+        .subtema {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #08979050;
+            border: 1px solid #089790;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subtema:hover {
+            background-color: #08979050;
+        }
+
+        .texto-subtema {
+            display: none; /* Oculta el texto por defecto */
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 3px solid #055B5C;
+            background-color: #f9f9f9;
+        }
+
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Acerca de nosotros</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="tipo-export.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-subtema">
+        <h1>Propiedad intelectual</h1>
+    
+        <div class="subtema" data-texto="Texto para el subtema 1">¿Qué es?</div>
+        <div class="texto-subtema" id="texto1"><p>Se refiere a la protección del producto del intelecto humano, sea en los campos científicos literarios, artísticos o industriales.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 2">Patentes</div>
+        <div class="texto-subtema" id="texto2"><p>• Licencia otorgada por el Servicio de Administración Tributaria (SAT).</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 3">Marcas registradas</div>
+        <div class="texto-subtema" id="texto3"><p>• Confiere al titular el derecho exclusivo de utilizarla.</p></div>
+
+        <div class="subtema" data-texto="Texto para el subtema 4">Derechos del autor</div>
+        <div class="texto-subtema" id="texto4"><p>• Normas jurídicas y principios que afirman los derechos morales y patrimoniales que la ley concede a los autores.</p></div>
+    
+        <div class="subtema" data-texto="Texto para el subtema 5">Diseños industriales</div>
+        <div class="texto-subtema" id="texto5"><p>• Actividad de diseño de productos seriados o industriales, que se dividen en dos tipos: bienes de consumo y bienes de capital.</p></div>    
+    
+        <div class="subtema" data-texto="Texto para el subtema 6">Secretos comerciales</div>
+        <div class="texto-subtema" id="texto6"><p>• Información confidencial que puede ser comercializada o conceder licencias de uso sobre ella.</p></div>    
+
+        <div class="subtema" data-texto="Texto para el subtema 7">Licencias y acuerdos</div>
+        <div class="texto-subtema" id="texto7"><p>• Contrato entre dos partes que otorga el derecho a utilizar la marca.</p></div>  
+        
+        <div class="subtema" data-texto="Texto para el subtema 8">Cumplimiento de normativas</div>
+        <div class="texto-subtema" id="texto8"><p>• Función de las empresas para garantizar que se respeten las normas y se cumplan las leyes vigentes.</p></div>
+        
+        <div class="subtema" data-texto="Texto para el subtema 9">Protección de derechos</div>
+        <div class="texto-subtema" id="texto9"><p>• Medidas y regulaciones que buscan garantizar que los derechos de los individuos, empresas y organizaciones sean respetados y protegidos.
+        </p></div>    
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.subtema').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const textoDiv = document.getElementById(`texto${index + 1}`);
+                if (textoDiv.style.display === 'none' || textoDiv.style.display === '') {
+                    textoDiv.style.display = 'block'; // Muestra el texto
+                } else {
+                    textoDiv.style.display = 'none'; // Oculta el texto
+                }
+            });
+        });
+    </script>
+</body>
+</html>

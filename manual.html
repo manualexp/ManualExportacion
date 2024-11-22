@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de exportación</title>
+    <meta name="description" content="Descripción de la página para SEO">
+    <link rel="stylesheet" href="css/manual-style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="css/img/barco-de-carga (3).png"></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Acerca de nosotros</a></li>
+                <li><a href="#proyectos">Manual</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="main-title">Manual de exportación</h1>
+        <p class="main-paragraph">Selecciona la opción que quieres consultar</p>
+
+        <div class="info-box" data-info="Definir el tipo de exportación">Definir el tipo de exportación</div>
+        <div class="info-box" data-info="Características de la empresa">Características de la empresa</div>
+        <div class="info-box" data-info="Desarrollar un plan estratégico para exportar">Desarrollar un plan estratégico para exportar</div>
+        <div class="info-box" data-info="Elabora tu plan de negocios">Elabora tu plan de negocios</div>
+        <div class="info-box" data-info="Abrir una cuenta">Abrir una cuenta</div>
+        <div class="info-box" data-info="Transporte">Transporte</div>
+        <div class="info-box" data-info="Despacho aduanero">Despacho aduanero</div>
+        <div class="info-box" data-info="Economía">Economía</div>
+        <div class="info-box" data-info="Métodos de pago">Métodos de pago</div>
+        <div class="info-box" data-info="Propiedad intelectual">Propiedad intelectual</div>
+        <div class="info-box" data-info="Práctica de negocios">Práctica de negocios</div>
+        <div class="info-box" data-info="Modalidades de inversión">Modalidades de inversión</div>
+        <div class="info-box" data-info="E-commerce">E-commerce</div>
+    </div>
+
+    <div class="info-modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="infoText"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const infoBoxes = document.querySelectorAll('.info-box');
+            const modal = document.getElementById('infoModal');
+            const infoText = document.getElementById('infoText');
+            const closeButton = document.querySelector('.close-button');
+
+            // Declarar infoData fuera del fetch para que esté disponible globalmente
+            let infoData = {};
+
+            // Cargar los datos del JSON
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    infoData = data; // Asignar datos a la variable global infoData
+                })
+                .catch(error => console.error('Error al cargar el JSON:', error));
+
+            // Configurar evento para cada caja de información
+            infoBoxes.forEach(box => {
+                box.addEventListener('click', () => {
+                    const infokey = box.getAttribute('data-info');
+                    const info = infoData[infokey] || 'Información no disponible';
+                    infoText.textContent = info;
+                    modal.style.display = 'block'; 
+                });
+            });
+
+            closeButton.addEventListener('click', () => {
+                modal.style.display = 'none'; 
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none'; 
+                }
+            });
+        });
+    </script>
+</body>
+</html>
